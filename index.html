@@ -6,16 +6,11 @@
   <title>Daniel Lugo</title>
   <meta name="description" content="Links from Daniel">
   <meta name="keywords" content="Daniel, links, Daniel links, DeLosSantosLugo, danielsantoslgo links, Daniel links danielsantoslgo, delosantoslugo Daniel links Daniel Lugo">
-  <style>
-    img {
-      width: 100%;
-      height: 100%;
-      image-rendering: pixelated;
-      max-width: 320px;
-    }
-  </style>
+  <!-- Enlaza el archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <button class="mode-toggle" onclick="toggleNightMode()">Modo Nocturno</button>
   <header>
     <h1>Daniel Lugo</h1>
   </header>
@@ -33,5 +28,17 @@
   <footer>
     <img alt="tuki" src="/tuki.jpg" />
   </footer>
+
+  <script>
+    function toggleNightMode() {
+      document.body.classList.toggle('night-mode');
+      const button = document.querySelector('.mode-toggle');
+      if (document.body.classList.contains('night-mode')) {
+        button.textContent = 'Modo Diurno';
+      } else {
+        button.textContent = 'Modo Nocturno';
+      }
+    }
+  </script>
 </body>
 </html>
