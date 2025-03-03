@@ -6,11 +6,40 @@
   <title>Daniel Lugo</title>
   <meta name="description" content="Links from Daniel">
   <meta name="keywords" content="Daniel, links, Daniel links, DeLosSantosLugo, danielsantoslgo links, Daniel links danielsantoslgo, delosantoslugo Daniel links Daniel Lugo">
-  <!-- Enlaza el archivo CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #121212; /* Fondo oscuro */
+      color: #ffffff; /* Texto blanco */
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    a {
+      color: #1e90ff; /* Azul brillante */
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    a:hover {
+      color: #ffcc00; /* Amarillo en hover */
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    footer img {
+      border-radius: 10px; /* Bordes redondeados para la imagen */
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <button class="mode-toggle" onclick="toggleNightMode()">Modo Nocturno</button>
   <header>
     <h1>Daniel Lugo</h1>
   </header>
@@ -28,17 +57,5 @@
   <footer>
     <img alt="tuki" src="/tuki.jpg" />
   </footer>
-
-  <script>
-    function toggleNightMode() {
-      document.body.classList.toggle('night-mode');
-      const button = document.querySelector('.mode-toggle');
-      if (document.body.classList.contains('night-mode')) {
-        button.textContent = 'Modo Diurno';
-      } else {
-        button.textContent = 'Modo Nocturno';
-      }
-    }
-  </script>
 </body>
 </html>
